@@ -1,0 +1,37 @@
+一、Windows下git的安装与配置
+https://blog.csdn.net/u010865136/article/details/60955771
+
+二、Windows 下GitHub 安装和使用
+https://www.cnblogs.com/lyr2015/p/6730476.html
+
+
+
+常用命令：
+
+1.从github上拉取代码
+git pull git@github.com:xxxx/yyyy.git 
+(其中xxxx是github注册时的用户名,yyyy是在github上的仓库名)
+
+2.把文件从本地传到仓库上(三部曲)
+a.增加或删除文件：
+git add filename (增加指定文件，为. 时表示增加所有文件)
+git rm -f filename (删除文件夹(带-f)或者文件)
+
+b.提交命令：
+git commit -m "修改说明"
+
+c.推送到远程仓库：
+git push git@github.com:xxxx/yyyy.git
+
+3.其他命令
+查看提交记录
+git log
+
+查看修改状态
+git status
+
+查看所有版本的版本号
+git reflog
+
+恢复到指定的提交版本
+git reset --hard <commit id>  (commit id可以使用git reflog或者git log命令查看)
